@@ -25,6 +25,31 @@
     border-radius: 12px;
     transition: all 0.3s ease;
 }
+.skills {
+  display: flex;
+  justify-content: center;   /* Centers horizontally */
+  align-items: center;       /* Centers vertically */
+  height: 100vh;             /* Optional: makes the section full viewport height */
+  text-align: center;
+}
+
+.skills-details {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* space between skill boxes */
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topic {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
 
 ::-webkit-scrollbar-thumb:hover {
     background: lightskyblue;
@@ -116,7 +141,7 @@ nav.sticky .menu-btn{
 .home{
   height: 100vh;
   width: 100%;
-  background: url("images/Portfolio.png") no-repeat;
+  background: url("C:\Users\KIIT\Downloads\Polish_20230905_203230904-3.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -771,16 +796,14 @@ ul li .title,
 ul li .descr {
   background: var(--bgColor);
   position: relative;
-  padding-inline: 1.5rem;
+
 }
 ul li .title {
   overflow: hidden;
   padding-block-start: 1.5rem;
-  padding-block-end: 1rem;
   font-weight: 500;
 }
 ul li .descr {
-  padding-block-end: 1.5rem;
   font-weight: 300;
 }
 
